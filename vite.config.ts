@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/app/',
+  base: '/rbt-exam-prep/app/',
   plugins: [
     react(),
     tailwindcss(),
@@ -19,8 +19,8 @@ export default defineConfig({
         background_color: '#0f172a',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/app/',
-        scope: '/app/',
+        start_url: '/rbt-exam-prep/app/',
+        scope: '/rbt-exam-prep/app/',
         icons: [
           {
             src: '/icon-192.svg',
