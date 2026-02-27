@@ -17,7 +17,7 @@ export default function Paywall({ onUnlock, onRestore }: PaywallProps) {
         </div>
 
         <h2 className="text-2xl font-bold mb-2">Free Trial Ended</h2>
-        <p className="text-slate-400 mb-6 text-sm leading-relaxed">
+        <p className="text-[#7A7A8A] mb-6 text-sm leading-relaxed">
           Your 24-hour free trial has ended. Unlock full access to all flashcards,
           practice quizzes, and exam simulations.
         </p>
@@ -25,7 +25,7 @@ export default function Paywall({ onUnlock, onRestore }: PaywallProps) {
         {/* Price */}
         <div className="mb-6">
           <div className="text-4xl font-black gradient-text mb-1">$4.99</div>
-          <p className="text-slate-500 text-xs">One-time payment &middot; Lifetime access</p>
+          <p className="text-[#7A7A8A] text-xs">One-time payment &middot; Lifetime access</p>
         </div>
 
         {/* Features included */}
@@ -36,7 +36,7 @@ export default function Paywall({ onUnlock, onRestore }: PaywallProps) {
             'Realistic 85-Question Exam Simulator',
             'Progress tracking & streaks',
           ].map((feature) => (
-            <div key={feature} className="flex items-center gap-2 text-sm text-slate-300">
+            <div key={feature} className="flex items-center gap-2 text-sm text-[#4A4A5A]">
               <span className="text-success flex-shrink-0">&#10003;</span>
               <span>{feature}</span>
             </div>
@@ -54,7 +54,7 @@ export default function Paywall({ onUnlock, onRestore }: PaywallProps) {
         {/* Restore */}
         <button
           onClick={onRestore}
-          className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
+          className="text-sm text-[#7A7A8A] hover:text-[#4A4A5A] transition-colors"
         >
           Restore Purchase
         </button>

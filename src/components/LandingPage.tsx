@@ -53,7 +53,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section className="relative px-4 pt-16 pb-20 text-center overflow-hidden">
         <div className="landing-hero-bg" />
         <div className="relative z-10 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-300 mb-8 animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#E8F0F7] border border-[#E5E3DE] text-sm text-[#4A4A5A] mb-8 animate-fade-up">
             <span>🎓</span>
             <span>Aligned with BACB 5th Edition Task List</span>
           </div>
@@ -61,10 +61,10 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
             <span className="block text-5xl sm:text-6xl mb-1">🧠</span>
             <span className="gradient-text">RBT Exam Prep</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-slate-300 font-medium mb-3 animate-fade-up delay-2">
+          <p className="text-xl sm:text-2xl text-[#4A4A5A] font-medium mb-3 animate-fade-up delay-2">
             Pass your RBT certification on the first try
           </p>
-          <p className="text-slate-400 mb-10 max-w-md mx-auto animate-fade-up delay-3">
+          <p className="text-[#7A7A8A] mb-10 max-w-md mx-auto animate-fade-up delay-3">
             The most comprehensive study app for the Registered Behavior Technician exam.
             Flashcards, quizzes, and a realistic exam simulator — all in your pocket.
           </p>
@@ -73,7 +73,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
               Start Free Trial
               <span className="ml-2">→</span>
             </button>
-            <p className="text-xs text-slate-500">Free for 24 hours &middot; No account required</p>
+            <p className="text-xs text-[#7A7A8A]">Free for 24 hours &middot; No account required</p>
           </div>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section ref={setRef(0)} className="landing-section px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-3">Everything you need to pass</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-lg mx-auto">
+          <p className="text-[#7A7A8A] text-center mb-12 max-w-lg mx-auto">
             Built specifically for the RBT certification exam with tools that match how you actually study.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -90,7 +90,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
               <div key={f.title} className="landing-feature-card" style={{ transitionDelay: `${i * 80}ms` }}>
                 <span className="text-3xl mb-3 block">{f.icon}</span>
                 <h3 className="text-lg font-bold mb-1">{f.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{f.desc}</p>
+                <p className="text-sm text-[#7A7A8A] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -101,14 +101,14 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section ref={setRef(1)} className="landing-section px-4 py-16">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-3">How it works</h2>
-          <p className="text-slate-400 text-center mb-12">A simple, proven study workflow</p>
+          <p className="text-[#7A7A8A] text-center mb-12">A simple, proven study workflow</p>
           <div className="space-y-6">
             {STEPS.map((s, i) => (
               <div key={s.num} className="landing-step-card" style={{ transitionDelay: `${i * 100}ms` }}>
                 <div className="landing-step-num">{s.num}</div>
                 <div>
                   <h3 className="text-lg font-bold mb-1">{s.title}</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-[#7A7A8A] leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -120,13 +120,13 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section ref={setRef(2)} className="landing-section px-4 py-16">
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-3xl font-bold mb-3">Simple, fair pricing</h2>
-          <p className="text-slate-400 mb-8">No subscriptions. No hidden fees.</p>
+          <p className="text-[#7A7A8A] mb-8">No subscriptions. No hidden fees.</p>
           <div className="landing-pricing-card">
             <div className="text-sm font-semibold text-primary mb-4 uppercase tracking-wider">Full Access</div>
             <div className="flex items-baseline justify-center gap-1 mb-1">
               <span className="text-5xl font-black gradient-text">$4.99</span>
             </div>
-            <p className="text-slate-500 text-sm mb-6">One-time payment &middot; Lifetime access</p>
+            <p className="text-[#7A7A8A] text-sm mb-6">One-time payment &middot; Lifetime access</p>
             <div className="text-left space-y-3 mb-8">
               {[
                 'Free for 24 hours — no credit card needed',
@@ -136,7 +136,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 'Progress tracking & daily streaks',
                 'Works offline as a mobile app',
               ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-slate-300">
+                <div key={item} className="flex items-start gap-2 text-sm text-[#4A4A5A]">
                   <span className="text-success mt-0.5 flex-shrink-0">&#10003;</span>
                   <span>{item}</span>
                 </div>
@@ -153,17 +153,17 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section ref={setRef(3)} className="landing-section px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-3">Loved by RBT students</h2>
-          <p className="text-slate-400 text-center mb-12">Join hundreds of students who passed with confidence</p>
+          <p className="text-[#7A7A8A] text-center mb-12">Join hundreds of students who passed with confidence</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {TESTIMONIALS.map((t, i) => (
               <div key={t.name} className="landing-testimonial-card" style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="flex gap-1 mb-3 text-warning">
                   {'★★★★★'.split('').map((s, j) => <span key={j}>{s}</span>)}
                 </div>
-                <p className="text-sm text-slate-300 leading-relaxed mb-4">"{t.text}"</p>
+                <p className="text-sm text-[#4A4A5A] leading-relaxed mb-4">"{t.text}"</p>
                 <div>
                   <p className="text-sm font-semibold">{t.name}</p>
-                  <p className="text-xs text-slate-500">{t.role}</p>
+                  <p className="text-xs text-[#7A7A8A]">{t.role}</p>
                 </div>
               </div>
             ))}
@@ -175,7 +175,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section ref={setRef(4)} className="landing-section px-4 py-20 text-center">
         <div className="max-w-lg mx-auto">
           <h2 className="text-3xl font-bold mb-3">Ready to pass your RBT exam?</h2>
-          <p className="text-slate-400 mb-8">Start studying now with a free 24-hour trial. No account needed.</p>
+          <p className="text-[#7A7A8A] mb-8">Start studying now with a free 24-hour trial. No account needed.</p>
           <button onClick={onGetStarted} className="landing-cta-btn">
             Start Studying Now
             <span className="ml-2">→</span>
@@ -190,15 +190,15 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
             <span className="text-xl">🧠</span>
             <span className="font-bold gradient-text">RBT Exam Prep</span>
           </div>
-          <p className="text-xs text-slate-600 mb-4">
+          <p className="text-xs text-[#7A7A8A] mb-4">
             Based on the BACB RBT Task List (5th ed.) &middot; Not affiliated with BACB
           </p>
-          <div className="flex items-center justify-center gap-6 text-xs text-slate-500">
-            <button onClick={onGetStarted} className="hover:text-slate-300 transition-colors">Get Started</button>
-            <span className="text-slate-700">|</span>
-            <a href="mailto:support@rbtexamprep.com" className="hover:text-slate-300 transition-colors">Contact</a>
-            <span className="text-slate-700">|</span>
-            <button className="hover:text-slate-300 transition-colors">Privacy</button>
+          <div className="flex items-center justify-center gap-6 text-xs text-[#7A7A8A]">
+            <button onClick={onGetStarted} className="hover:text-[#4A4A5A] transition-colors">Get Started</button>
+            <span className="text-[#E5E3DE]">|</span>
+            <a href="mailto:support@rbtexamprep.com" className="hover:text-[#4A4A5A] transition-colors">Contact</a>
+            <span className="text-[#E5E3DE]">|</span>
+            <button className="hover:text-[#4A4A5A] transition-colors">Privacy</button>
           </div>
         </div>
       </footer>

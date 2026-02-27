@@ -36,7 +36,7 @@ export default function InstallPrompt() {
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold truncate">Install RBT Exam Prep</p>
-          <p className="text-xs text-slate-400">Study offline anytime</p>
+          <p className="text-xs text-[#7A7A8A]">Study offline anytime</p>
         </div>
         <button
           onClick={handleInstall}
@@ -46,7 +46,7 @@ export default function InstallPrompt() {
         </button>
         <button
           onClick={() => setDismissed(true)}
-          className="text-slate-500 hover:text-slate-300 text-lg flex-shrink-0"
+          className="text-[#7A7A8A] hover:text-[#4A4A5A] text-lg flex-shrink-0"
           aria-label="Dismiss"
         >
           &times;

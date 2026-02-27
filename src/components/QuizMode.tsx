@@ -110,7 +110,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
 
         <div className="glass-card-strong p-6 mb-6">
           <label className="block font-semibold text-white mb-3">Categories</label>
-          <p className="text-sm text-slate-400 mb-3">
+          <p className="text-sm text-[#7A7A8A] mb-3">
             Select categories or leave blank for all
           </p>
           <div className="flex flex-col gap-3">
@@ -125,7 +125,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
                   onChange={() => toggleCategory(cat)}
                   className="dark-checkbox"
                 />
-                <span className="text-sm text-slate-300 group-hover:text-white transition-colors">
+                <span className="text-sm text-[#4A4A5A] group-hover:text-[#1A1A2E] transition-colors">
                   {cat}
                 </span>
               </label>
@@ -180,7 +180,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
           >
             <div className="text-center">
               <p className="text-3xl font-black text-white">{pct}%</p>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-[#7A7A8A]">
                 {correctCount}/{quizQuestions.length}
               </p>
             </div>
@@ -204,7 +204,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
                     <span>&#x2705;</span>
                     {q.options[q.correctIndex]}
                   </p>
-                  <p className="text-sm text-slate-400 italic mt-2">
+                  <p className="text-sm text-[#7A7A8A] italic mt-2">
                     {q.explanation}
                   </p>
                 </div>
@@ -259,7 +259,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
                 disabled={showFeedback}
                 className={classes}
               >
-                <span className="font-semibold text-slate-400 mr-2">
+                <span className="font-semibold text-[#7A7A8A] mr-2">
                   {String.fromCharCode(65 + i)}.
                 </span>
                 <span>{opt}</span>
@@ -287,7 +287,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
             }`}>
               {selectedAnswer === q.correctIndex ? '\u2705 Correct!' : '\u274C Incorrect'}
             </p>
-            <p className="text-sm text-slate-300">{q.explanation}</p>
+            <p className="text-sm text-[#4A4A5A]">{q.explanation}</p>
           </div>
         )}
 

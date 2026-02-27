@@ -2807,7 +2807,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation:
-      'This is respondent conditioning: the dog (previously neutral stimulus) was paired with an aversive event (being bitten) and now elicits a reflexive emotional response (crying). The dog became a conditioned stimulus.',
+      'This is respondent conditioning: the dog (previously neutral stimulus) was paired with an aversive event (being bitten) and now elicits a reflexive emotional response (crying). The dog became a conditioned stimulus. Note: Respondent conditioning is a foundational concept tested on the RBT exam even though it does not have its own dedicated task code.',
   },
   {
     id: 'q178',
@@ -4227,7 +4227,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 0,
     explanation:
-      'Mandated reporters are required by law to report any reasonable suspicion of abuse or neglect to the appropriate authorities (e.g., child protective services). They do not need to have proof; the investigation is handled by the authorities.',
+      'Mandated reporters are required by law to report any reasonable suspicion of abuse or neglect to the appropriate authorities (e.g., child protective services). They do not need to have proof; the investigation is handled by the authorities. RBTs should also notify their supervisor, but the legal obligation to report to authorities exists independently of the supervisor relationship.',
   },
   {
     id: 'q268',
@@ -4749,5 +4749,310 @@ export const questions: Question[] = [
     correctIndex: 1,
     explanation:
       'Transporting clients is outside the RBT\'s professional role and creates dual relationships, liability issues, and potential boundary violations. The RBT should politely decline and suggest alternative transportation arrangements.',
+  },
+
+  // ============================================================
+  // Section E — Additional Professional Conduct Questions (q301–q320)
+  // ============================================================
+
+  {
+    id: 'q301',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-01',
+    question: 'An RBT notices that a client\'s behavior plan has not been updated in over six months, despite significant changes in the client\'s behavior. The RBT should:',
+    options: [
+      'Modify the behavior plan independently based on their observations',
+      'Continue implementing the current plan exactly as written',
+      'Communicate the observed changes to the supervising BCBA and request a plan review',
+      'Discontinue the behavior plan until the BCBA updates it',
+    ],
+    correctIndex: 2,
+    explanation:
+      'RBTs must communicate significant changes in client behavior to their supervisor. Modifying behavior plans is outside the RBT\'s scope of practice — that responsibility belongs to the BCBA. However, continuing an outdated plan without reporting concerns would be a disservice to the client.',
+  },
+  {
+    id: 'q302',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-01',
+    question: 'Which of the following BEST describes the RBT\'s scope of practice?',
+    options: [
+      'RBTs independently design and modify behavior intervention plans',
+      'RBTs implement behavior plans under the close supervision of a BCBA or BCaBA',
+      'RBTs supervise other RBTs and provide feedback on their performance',
+      'RBTs conduct functional behavior assessments and write behavior plans',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The RBT credential is a paraprofessional certification. RBTs implement plans designed by a BCBA/BCaBA and work under close, ongoing supervision. Designing plans, conducting FBAs, and supervising other RBTs are outside the RBT scope.',
+  },
+  {
+    id: 'q303',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-02',
+    question: 'During a parent meeting, the parent asks the RBT to explain the rationale behind a new behavior intervention. The RBT should:',
+    options: [
+      'Explain the rationale in detail since they implement the plan daily',
+      'Refer the parent to the BCBA for a detailed explanation of the intervention rationale',
+      'Refuse to discuss anything about the intervention',
+      'Provide their personal opinion about whether the intervention is appropriate',
+    ],
+    correctIndex: 1,
+    explanation:
+      'While RBTs can describe what they do during sessions, explaining the clinical rationale behind intervention decisions is the responsibility of the supervising BCBA. The RBT should direct the parent to the BCBA for these discussions.',
+  },
+  {
+    id: 'q304',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-02',
+    question: 'An RBT receives a phone call from a client\'s teacher asking for recommendations on how to manage the client\'s behavior in the classroom. The RBT should:',
+    options: [
+      'Share the behavior plan strategies since they know them well',
+      'Provide general ABA tips that might help',
+      'Explain that providing recommendations is outside their scope and refer the teacher to the supervising BCBA',
+      'Tell the teacher to figure it out on their own',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Making recommendations about behavior management strategies to other professionals is outside the RBT\'s scope of practice. The RBT should politely explain this and connect the teacher with the supervising BCBA who can provide appropriate guidance.',
+  },
+  {
+    id: 'q305',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-03',
+    question: 'An RBT is asked to implement a new punishment procedure that involves response cost. Before implementing it, the RBT should ensure that:',
+    options: [
+      'The procedure is described in the written behavior plan approved by the BCBA',
+      'They personally agree with the procedure',
+      'The client\'s parents have given verbal permission',
+      'Other RBTs in the clinic are also using the same procedure',
+    ],
+    correctIndex: 0,
+    explanation:
+      'RBTs should only implement procedures that are documented in the written behavior plan approved by the supervising BCBA. This ensures accountability, proper oversight, and that the procedure has been clinically justified. Verbal agreements or personal opinions are not sufficient.',
+  },
+  {
+    id: 'q306',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-03',
+    question: 'An RBT believes that a client\'s behavior reduction procedure is too restrictive and is causing the client distress. What should the RBT do?',
+    options: [
+      'Stop implementing the procedure immediately and document why',
+      'Continue implementing the procedure but express concerns to the BCBA as soon as possible',
+      'Modify the procedure to make it less restrictive',
+      'Ask the client\'s parents to request a change',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The RBT should continue following the approved plan while promptly reporting concerns to the BCBA. Unilaterally stopping or modifying a procedure is outside the RBT\'s scope. If the RBT believes there is immediate risk of harm, they should contact the BCBA immediately.',
+  },
+  {
+    id: 'q307',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-04',
+    question: 'A client\'s mother offers the RBT a $100 gift card at the end of the year as a thank-you. The RBT should:',
+    options: [
+      'Accept it graciously to maintain the relationship',
+      'Accept it but not tell the supervisor',
+      'Politely decline or consult with their supervisor about the organization\'s gift policy',
+      'Accept it and split it with their supervisor',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Accepting gifts from clients or their families can create dual relationships and compromise professional objectivity. The RBT should follow their organization\'s policy on gifts and consult with their supervisor. Most organizations have clear guidelines about gift acceptance.',
+  },
+  {
+    id: 'q308',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-04',
+    question: 'An RBT discovers that a colleague is billing for session hours that were not actually conducted. The RBT should:',
+    options: [
+      'Confront the colleague directly and demand they stop',
+      'Ignore it because it doesn\'t involve their clients',
+      'Report the suspected fraud to their supervisor or the appropriate authority within the organization',
+      'Start doing the same thing since no one seems to notice',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Fraudulent billing is a serious ethical and legal violation. RBTs have a responsibility to report suspected fraud through proper channels, typically to their supervisor or compliance department. Ignoring unethical behavior is itself an ethical violation.',
+  },
+  {
+    id: 'q309',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-05',
+    question: 'An RBT runs into a client and their family at the grocery store. The family invites the RBT to their upcoming barbecue. The RBT should:',
+    options: [
+      'Accept the invitation to strengthen the therapeutic relationship',
+      'Accept but only stay for a short time',
+      'Politely decline, explaining that attending social events with client families would create a dual relationship',
+      'Accept but avoid talking about therapy at the barbecue',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Socializing with client families outside of the professional context creates dual relationships that can compromise objectivity, create conflicts of interest, and blur professional boundaries. The RBT should politely decline while maintaining a warm professional relationship.',
+  },
+  {
+    id: 'q310',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-05',
+    question: 'A client\'s parent sends the RBT a friend request on social media. The MOST appropriate response is to:',
+    options: [
+      'Accept the request but limit what the parent can see on their profile',
+      'Accept the request to build rapport with the family',
+      'Not accept the request and inform the supervisor about the situation',
+      'Create a separate professional account to connect with the parent',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Connecting with clients or their families on personal social media creates dual relationships and potential boundary violations. The RBT should not accept the request and should discuss the situation with their supervisor to determine the best way to handle it professionally.',
+  },
+  {
+    id: 'q311',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-06',
+    question: 'During a supervision meeting, the BCBA provides feedback that the RBT disagrees with. The RBT should:',
+    options: [
+      'Ignore the feedback and continue doing what they think is best',
+      'Accept the feedback professionally and implement the suggested changes, then discuss any concerns respectfully',
+      'Complain to other RBTs about the supervisor\'s feedback',
+      'File a formal complaint about the supervisor',
+    ],
+    correctIndex: 1,
+    explanation:
+      'RBTs are expected to accept and implement supervisory feedback. If the RBT has concerns, they should discuss them respectfully with the supervisor. Professional disagreements should be handled through open communication, not avoidance or complaints to colleagues.',
+  },
+  {
+    id: 'q312',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-06',
+    question: 'How often must an RBT receive supervision according to BACB requirements?',
+    options: [
+      'Once per year during credential renewal',
+      'At least 5% of their total hours worked, with at least two contacts per month',
+      'Only when the RBT requests it',
+      'Once per month for a minimum of 30 minutes',
+    ],
+    correctIndex: 1,
+    explanation:
+      'BACB requires that RBTs receive ongoing supervision amounting to at least 5% of the hours spent providing behavior-analytic services, with a minimum of two supervision contacts per month. At least one contact per month must include direct observation.',
+  },
+  {
+    id: 'q313',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-07',
+    question: 'An RBT is providing services in a client\'s home. During the session, the parent shares detailed information about their marital problems. The RBT should:',
+    options: [
+      'Listen attentively and offer advice to help the family',
+      'Redirect the conversation to the session and the client\'s goals, and suggest the parent speak with an appropriate professional if needed',
+      'Share their own relationship experiences to build rapport',
+      'Report the information to the supervisor as a potential risk to the client',
+    ],
+    correctIndex: 1,
+    explanation:
+      'While being empathetic, the RBT should maintain professional boundaries and redirect conversations back to the client\'s treatment. Providing counseling or personal advice is outside the RBT\'s scope. The RBT can suggest the parent speak with a therapist or counselor if appropriate.',
+  },
+  {
+    id: 'q314',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-07',
+    question: 'An RBT working in a client\'s home notices that the home has no food and the child appears malnourished. What is the RBT\'s PRIMARY obligation?',
+    options: [
+      'Bring food for the child during the next session',
+      'Report the concern to the appropriate authorities as a mandated reporter and notify the supervisor',
+      'Talk to the parents about budgeting for groceries',
+      'Document the observation but take no further action',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Signs of neglect (such as lack of food and malnourishment) trigger the RBT\'s mandated reporting obligation. The RBT must report to the appropriate authorities (e.g., child protective services) and also notify their supervisor. Bringing food or offering financial advice is not the RBT\'s role.',
+  },
+  {
+    id: 'q315',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-08',
+    question: 'Which of the following is the BEST example of maintaining cultural sensitivity as an RBT?',
+    options: [
+      'Assuming all families from the same cultural background have identical values and preferences',
+      'Asking the family about their cultural preferences and incorporating them into session activities when consistent with the treatment plan',
+      'Ignoring cultural differences to treat all clients equally',
+      'Celebrating cultural holidays with the client\'s family during session time',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Cultural sensitivity involves learning about each family\'s unique values and preferences rather than making assumptions. The RBT should ask about cultural considerations and incorporate them when they are consistent with the treatment goals and plan.',
+  },
+  {
+    id: 'q316',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-08',
+    question: 'A client\'s family requests that the RBT remove shoes before entering their home for cultural reasons. The RBT should:',
+    options: [
+      'Refuse because it is not in the service agreement',
+      'Comply with the request as it respects the family\'s cultural practices and does not interfere with treatment',
+      'Ask the BCBA to add it to the behavior plan first',
+      'Wear shoe covers as a compromise without discussing it with the family',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Respecting reasonable cultural practices such as removing shoes is part of maintaining a respectful professional relationship. This request does not interfere with treatment delivery and honoring it demonstrates cultural sensitivity.',
+  },
+  {
+    id: 'q317',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-09',
+    question: 'An RBT accidentally shares a client\'s progress data with the wrong family via email. The RBT should FIRST:',
+    options: [
+      'Delete the email and hope no one notices',
+      'Immediately notify their supervisor about the confidentiality breach',
+      'Send a follow-up email asking the recipient to delete the information',
+      'Wait to see if the recipient says anything about it',
+    ],
+    correctIndex: 1,
+    explanation:
+      'A confidentiality breach must be reported to the supervisor immediately so that appropriate corrective actions can be taken. The supervisor can then guide the response, which may include contacting the unintended recipient, notifying affected families, and documenting the incident.',
+  },
+  {
+    id: 'q318',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-09',
+    question: 'An RBT is writing session notes on their laptop at a coffee shop. Which of the following represents the GREATEST risk to client confidentiality?',
+    options: [
+      'Using the laptop\'s battery instead of plugging it in',
+      'Having the screen visible to other customers who could see client information',
+      'Typing too loudly and disturbing other customers',
+      'Using the coffee shop\'s Wi-Fi to check personal email',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Working with client data in public places poses a confidentiality risk if the screen is visible to others. RBTs must take precautions to protect client information, such as using privacy screens, sitting with their back to a wall, or avoiding public locations for documentation.',
+  },
+  {
+    id: 'q319',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-10',
+    question: 'An RBT witnesses another staff member using physical restraint on a client without it being part of the approved behavior plan. The RBT should:',
+    options: [
+      'Help the staff member with the restraint to keep the client safe',
+      'Wait until the situation resolves and then mention it casually to the supervisor later',
+      'Immediately report the incident to their supervisor and document what they observed',
+      'Post about the incident anonymously online to raise awareness',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Using physical restraint outside of an approved behavior plan is a serious violation that poses risk to the client. The RBT must report this immediately to their supervisor and document the incident. Timely reporting is essential for client safety.',
+  },
+  {
+    id: 'q320',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-10',
+    question: 'An RBT suspects that their supervising BCBA is engaging in an inappropriate dual relationship with a client\'s parent. The RBT should:',
+    options: [
+      'Ignore it because the BCBA is their supervisor and likely knows the ethics code',
+      'Discuss the concern with other RBTs to get their opinions',
+      'Report the concern to the BCBA\'s supervisor, the organization\'s ethics committee, or the BACB',
+      'Confront the BCBA directly during a session with the client present',
+    ],
+    correctIndex: 2,
+    explanation:
+      'When an RBT suspects ethical violations by their supervisor, they should report the concern through appropriate channels — such as the organization\'s ethics committee, the BCBA\'s supervisor, or the BACB. RBTs have an obligation to report ethical concerns regardless of the person\'s position.',
   },
 ];

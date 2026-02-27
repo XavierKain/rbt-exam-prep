@@ -23,8 +23,8 @@ export default function ProgressBar({
     <div className="w-full">
       {label && (
         <div className="flex justify-between text-sm mb-1.5">
-          <span className="text-slate-300 font-medium truncate mr-2">{label}</span>
-          <span className="text-slate-400 font-semibold tabular-nums whitespace-nowrap">
+          <span className="text-[#4A4A5A] font-medium truncate mr-2">{label}</span>
+          <span className="text-[#7A7A8A] font-semibold tabular-nums whitespace-nowrap">
             {value}/{max} ({pct}%)
           </span>
         </div>

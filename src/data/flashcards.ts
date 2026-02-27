@@ -120,7 +120,7 @@ export const flashcards: Flashcard[] = [
     taskCode: 'A-07',
     term: 'Equal-Interval Graphs (Line Graphs)',
     definition:
-      'Equal-interval graphs display data points across sessions or time periods with equally spaced intervals on the x-axis and the measure of behavior on the y-axis. They typically include axis labels, a title, phase change lines, and data paths. RBTs should be able to plot data points accurately and recognize basic trends such as increasing, decreasing, or stable patterns. These graphs are the primary visual tool for monitoring client progress in ABA.',
+      'Equal-interval graphs display data points across sessions or time periods with equally spaced intervals on the x-axis and the measure of behavior on the y-axis. They typically include axis labels, a title, phase change lines, and data paths. RBTs should be able to plot data points accurately and recognize basic trends such as increasing, decreasing, or stable patterns. These graphs are the primary visual tool for monitoring client progress in ABA. While other types of graphs exist in ABA (e.g., cumulative records, bar graphs, scatterplots), line graphs are the most commonly used and are the primary focus for the RBT exam.',
   },
 
   // ============================================================
@@ -1529,5 +1529,50 @@ export const flashcards: Flashcard[] = [
     term: 'Ethical Considerations in Behavior Reduction',
     definition:
       'When implementing behavior reduction procedures, ethical guidelines require that the least restrictive effective treatment be used first. This means reinforcement-based procedures (such as differential reinforcement, NCR, and antecedent modifications) should be prioritized before considering punishment-based procedures. If more restrictive procedures are necessary, they must be approved by the supervising BCBA, documented in the behavior plan, and accompanied by reinforcement for appropriate alternative behaviors. The client\'s dignity, right to effective treatment, and overall well-being must guide all decisions regarding behavior reduction.',
+  },
+
+  // ============================================================
+  // Additional Flashcards for Missing Concepts (fc155–fc159)
+  // ============================================================
+
+  {
+    id: 'fc155',
+    category: 'B. Skill Acquisition',
+    taskCode: 'B-06',
+    term: 'Demand Fading',
+    definition:
+      'Demand fading is an antecedent-based strategy used to gradually increase task demands after establishing compliance at lower levels. The process begins with presenting easy or preferred tasks (low demands) and systematically increasing the difficulty, duration, or number of demands as the individual demonstrates success. This approach is commonly used with individuals who engage in escape-maintained behavior. By starting with achievable demands and building tolerance over time, demand fading reduces the likelihood of problem behavior while increasing task engagement and compliance.',
+  },
+  {
+    id: 'fc156',
+    category: 'B. Skill Acquisition',
+    taskCode: 'B-03',
+    term: 'Priming',
+    definition:
+      'Priming is an antecedent-based intervention that involves previewing or pre-teaching upcoming activities, materials, or expectations before they occur in the natural environment. For example, showing a child the schedule for the day before school, practicing a social script before a playdate, or reviewing academic material before class. Priming reduces anxiety, increases predictability, and prepares the individual to respond successfully. It is especially useful for individuals who have difficulty with transitions or novel situations.',
+  },
+  {
+    id: 'fc157',
+    category: 'C. Behavior Reduction',
+    taskCode: 'C-01',
+    term: 'Environmental Enrichment',
+    definition:
+      'Environmental enrichment (also called environmental arrangement or noncontingent access to stimulation) is an antecedent-based strategy that involves providing free access to preferred items, activities, or sensory stimulation in the environment to reduce the motivation for problem behavior. For example, providing a variety of sensory toys in a work area may decrease automatically reinforced stereotypy by reducing the EO for sensory input. Environmental enrichment is commonly used alongside other behavior reduction strategies and is considered a least-restrictive intervention approach.',
+  },
+  {
+    id: 'fc158',
+    category: 'E. Professional Conduct & Scope of Practice',
+    taskCode: 'E-01',
+    term: 'D-03 and E-01 Overlap: Reporting and Scope',
+    definition:
+      'Task codes D-03 (report observations to the supervisor) and E-01 (describe the RBT\'s scope of practice) overlap in important ways. The RBT\'s scope of practice requires them to report all significant observations — including changes in client behavior, environmental changes, potential safety concerns, and implementation challenges — to their supervising BCBA. Understanding that reporting is both a documentation responsibility (D-03) and a scope-of-practice responsibility (E-01) helps clarify why consistent communication with the supervisor is fundamental to the RBT role. When in doubt about whether something is worth reporting, the RBT should always err on the side of communicating with the supervisor.',
+  },
+  {
+    id: 'fc159',
+    category: 'B. Skill Acquisition',
+    taskCode: 'B-07',
+    term: 'Respondent vs. Operant Conditioning',
+    definition:
+      'Respondent (classical) conditioning involves the pairing of stimuli to elicit involuntary, reflexive responses. A neutral stimulus is paired with an unconditioned stimulus until the neutral stimulus alone elicits a conditioned response (e.g., a child who was stung by a bee now feels fear when seeing any bee). Operant conditioning involves the manipulation of consequences (reinforcement or punishment) to change the future probability of voluntary behavior. Key distinction: respondent conditioning deals with automatic, involuntary responses elicited by stimuli, while operant conditioning deals with voluntary behaviors that are strengthened or weakened by their consequences. Both types of conditioning are tested on the RBT exam and often interact in real-world behavior.',
   },
 ];

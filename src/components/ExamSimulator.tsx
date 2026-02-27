@@ -152,7 +152,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
           <h3 className="font-bold text-lg text-white mb-4 flex items-center gap-2">
             <span>{'\u{1F4CB}'}</span> Exam Format
           </h3>
-          <ul className="space-y-3 text-sm text-slate-300">
+          <ul className="space-y-3 text-sm text-[#4A4A5A]">
             <li className="flex items-center gap-2">
               <span className="text-blue-400">{'\u{25CF}'}</span>
               <strong className="text-white">{EXAM_QUESTIONS} multiple-choice questions</strong>
@@ -212,12 +212,12 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
           >
             <div className="text-center">
               <p className="text-3xl font-black text-white">{pct}%</p>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-[#7A7A8A]">
                 {resultData.correct}/{examQuestions.length}
               </p>
             </div>
           </div>
-          <p className="text-sm text-slate-400 mt-2">
+          <p className="text-sm text-[#7A7A8A] mt-2">
             Passing score: 80% &middot; Time used:{' '}
             {formatTime(EXAM_TIME_SECONDS - timeLeft)}
           </p>
@@ -262,7 +262,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
                     <span>&#x2705;</span>
                     {q.options[q.correctIndex]}
                   </p>
-                  <p className="text-sm text-slate-400 italic mt-2">
+                  <p className="text-sm text-[#7A7A8A] italic mt-2">
                     {q.explanation}
                   </p>
                 </div>
@@ -290,7 +290,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
       {/* Header */}
       <div className="sticky top-0 z-10 pb-3 pt-1" style={{ background: 'linear-gradient(to bottom, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.8) 80%, transparent 100%)' }}>
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-medium text-slate-400">
+          <span className="text-sm font-medium text-[#7A7A8A]">
             {answeredCount} of {examQuestions.length} answered
           </span>
           <div className={`timer-pill ${isTimeLow ? 'time-low' : ''}`}>
@@ -315,7 +315,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
             className={`text-sm px-3 py-1.5 rounded-lg font-medium transition-all ${
               flagged.has(q.id)
                 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                : 'bg-slate-700/50 text-slate-400 border border-transparent hover:border-slate-600'
+                : 'bg-[#F3F1EE] text-[#7A7A8A] border border-transparent hover:border-slate-600'
             }`}
           >
             {flagged.has(q.id) ? '\u{1F6A9} Flagged' : '\u{1F3F3}\u{FE0F} Flag'}
@@ -337,7 +337,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
                 answers[q.id] === i ? 'selected' : ''
               }`}
             >
-              <span className="font-semibold text-slate-400 mr-2">
+              <span className="font-semibold text-[#7A7A8A] mr-2">
                 {String.fromCharCode(65 + i)}.
               </span>
               {opt}
@@ -377,7 +377,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
 
       {/* Question grid */}
       <div className="glass-card p-4 mt-6">
-        <p className="text-sm font-semibold text-slate-400 mb-3">
+        <p className="text-sm font-semibold text-[#7A7A8A] mb-3">
           Question Navigator
         </p>
         <div className="flex flex-wrap gap-1.5">

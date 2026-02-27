@@ -73,7 +73,7 @@ export default function FlashCard({
   if (filtered.length === 0) {
     return (
       <div className="text-center py-16 animate-fade-up">
-        <p className="text-slate-400 text-lg mb-4">
+        <p className="text-[#7A7A8A] text-lg mb-4">
           No flashcards match your filters.
         </p>
         <button
@@ -133,7 +133,7 @@ export default function FlashCard({
         </select>
       </div>
 
-      <p className="text-sm text-slate-500 mb-4 animate-fade-up delay-1">
+      <p className="text-sm text-[#7A7A8A] mb-4 animate-fade-up delay-1">
         Card {currentIndex + 1} of {filtered.length}
       </p>
 
@@ -153,7 +153,7 @@ export default function FlashCard({
               <h2 className="text-xl font-bold text-white mb-4 text-shadow-sm">
                 {card.term}
               </h2>
-              <p className="text-slate-500 text-sm italic">
+              <p className="text-[#7A7A8A] text-sm italic">
                 Tap to reveal definition
               </p>
             </div>
@@ -168,7 +168,7 @@ export default function FlashCard({
               <h2 className="text-lg font-bold text-white mb-3 text-shadow-sm">
                 {card.term}
               </h2>
-              <p className="text-slate-300 leading-relaxed text-sm">
+              <p className="text-[#4A4A5A] leading-relaxed text-sm">
                 {card.definition}
               </p>
             </div>

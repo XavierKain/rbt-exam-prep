@@ -103,7 +103,7 @@ export default function Dashboard({ progress, onReset }: DashboardProps) {
         <div className="grid grid-cols-2 gap-3 mb-8">
           {quizCount > 0 && (
             <div className="glass-card p-5 text-center animate-fade-up delay-2 glow-blue">
-              <p className="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">
+              <p className="text-xs text-[#7A7A8A] font-medium uppercase tracking-wider mb-1">
                 Avg Quiz Score
               </p>
               <p className="text-4xl font-black gradient-text">{avgQuizScore}%</p>
@@ -111,7 +111,7 @@ export default function Dashboard({ progress, onReset }: DashboardProps) {
           )}
           {examCount > 0 && (
             <div className="glass-card p-5 text-center animate-fade-up delay-3 glow-purple">
-              <p className="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">
+              <p className="text-xs text-[#7A7A8A] font-medium uppercase tracking-wider mb-1">
                 Avg Exam Score
               </p>
               <p className="text-4xl font-black gradient-text">{avgExamScore}%</p>
@@ -139,7 +139,7 @@ export default function Dashboard({ progress, onReset }: DashboardProps) {
 
       {/* Summary stats */}
       <div className="glass-card p-4 mb-6 animate-fade-up">
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-[#4A4A5A]">
           <strong className="text-white">{flashcards.length}</strong> flashcards &middot;{' '}
           <strong className="text-white">{questions.length}</strong> practice questions &middot;{' '}
           <strong className="text-emerald-400">{knownCards.length}</strong> mastered &middot;{' '}
@@ -164,7 +164,7 @@ export default function Dashboard({ progress, onReset }: DashboardProps) {
                     key={i}
                     className="glass-card flex justify-between items-center px-4 py-3"
                   >
-                    <span className="text-sm text-slate-400">
+                    <span className="text-sm text-[#7A7A8A]">
                       {new Date(exam.date).toLocaleDateString()}
                     </span>
                     <span
