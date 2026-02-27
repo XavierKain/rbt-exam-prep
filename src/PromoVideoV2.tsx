@@ -109,7 +109,7 @@ const SlideHook: React.FC = () => {
     <AbsoluteFill style={{ background: C.bg, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 60 }}>
       <BgPattern />
       <ScaleIn>
-        <div style={{ fontSize: 120, marginBottom: 20 }}>🧠</div>
+        <div style={{ fontSize: 110, marginBottom: 20 }}>🎓</div>
       </ScaleIn>
       <FadeUp delay={10}>
         <h1 style={{
@@ -177,19 +177,56 @@ const StatCard: React.FC<{
 const SlideStats: React.FC = () => (
   <AbsoluteFill style={{
     background: C.bg, display: "flex", flexDirection: "column",
-    alignItems: "center", justifyContent: "center", padding: 60, gap: 20,
+    alignItems: "center", justifyContent: "center", padding: 60,
   }}>
     <BgPattern color={C.greenBg} />
     <FadeUp>
       <h2 style={{
         fontFamily: FONT_TITLE, fontSize: 48, color: C.text,
-        textAlign: "center", marginBottom: 25,
+        textAlign: "center", marginBottom: 30,
       }}>Everything you need</h2>
     </FadeUp>
-    <StatCard icon="📚" number="159" label="Flashcards" delay={8} color={C.primary} />
-    <StatCard icon="❓" number="320+" label="Practice Questions" delay={16} color={C.green} />
-    <StatCard icon="📝" number="85-Q" label="Exam Simulator" delay={24} color={C.accent} />
-    <StatCard icon="📊" number="Live" label="Progress Tracking" delay={32} color={C.primary} />
+    <div style={{
+      display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18,
+      width: "100%", maxWidth: 820, padding: "0 20px",
+    }}>
+      <ScaleIn delay={8}><div style={{
+        background: C.card, border: `1px solid ${C.border}`, borderRadius: 16,
+        padding: "28px 20px", textAlign: "center",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.05)",
+      }}>
+        <div style={{ fontSize: 36, marginBottom: 8 }}>📚</div>
+        <div style={{ fontFamily: FONT_TITLE, fontSize: 42, color: C.primary }}>159</div>
+        <div style={{ fontFamily: FONT_BODY, fontSize: 20, color: C.muted }}>Flashcards</div>
+      </div></ScaleIn>
+      <ScaleIn delay={14}><div style={{
+        background: C.card, border: `1px solid ${C.border}`, borderRadius: 16,
+        padding: "28px 20px", textAlign: "center",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.05)",
+      }}>
+        <div style={{ fontSize: 36, marginBottom: 8 }}>❓</div>
+        <div style={{ fontFamily: FONT_TITLE, fontSize: 42, color: C.green }}>320+</div>
+        <div style={{ fontFamily: FONT_BODY, fontSize: 20, color: C.muted }}>Questions</div>
+      </div></ScaleIn>
+      <ScaleIn delay={20}><div style={{
+        background: C.card, border: `1px solid ${C.border}`, borderRadius: 16,
+        padding: "28px 20px", textAlign: "center",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.05)",
+      }}>
+        <div style={{ fontSize: 36, marginBottom: 8 }}>📝</div>
+        <div style={{ fontFamily: FONT_TITLE, fontSize: 42, color: C.accent }}>85-Q</div>
+        <div style={{ fontFamily: FONT_BODY, fontSize: 20, color: C.muted }}>Exam Sim</div>
+      </div></ScaleIn>
+      <ScaleIn delay={26}><div style={{
+        background: C.card, border: `1px solid ${C.border}`, borderRadius: 16,
+        padding: "28px 20px", textAlign: "center",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.05)",
+      }}>
+        <div style={{ fontSize: 36, marginBottom: 8 }}>📊</div>
+        <div style={{ fontFamily: FONT_TITLE, fontSize: 42, color: C.primary }}>Live</div>
+        <div style={{ fontFamily: FONT_BODY, fontSize: 20, color: C.muted }}>Tracking</div>
+      </div></ScaleIn>
+    </div>
   </AbsoluteFill>
 );
 
