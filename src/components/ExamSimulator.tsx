@@ -145,21 +145,21 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
     return (
       <div className="max-w-xl mx-auto text-center animate-fade-up">
         <div className="text-5xl mb-4">{'\u{1F4DD}'}</div>
-        <h2 className="text-2xl font-bold text-white mb-4 text-shadow-sm">
+        <h2 className="text-2xl font-bold text-[#1A1A2E] mb-4 text-shadow-sm">
           RBT Exam Simulator
         </h2>
         <div className="glass-card-strong p-6 mb-6 text-left">
-          <h3 className="font-bold text-lg text-white mb-4 flex items-center gap-2">
+          <h3 className="font-bold text-lg text-[#1A1A2E] mb-4 flex items-center gap-2">
             <span>{'\u{1F4CB}'}</span> Exam Format
           </h3>
           <ul className="space-y-3 text-sm text-[#4A4A5A]">
             <li className="flex items-center gap-2">
               <span className="text-blue-400">{'\u{25CF}'}</span>
-              <strong className="text-white">{EXAM_QUESTIONS} multiple-choice questions</strong>
+              <strong className="text-[#1A1A2E]">{EXAM_QUESTIONS} multiple-choice questions</strong>
             </li>
             <li className="flex items-center gap-2">
               <span className="text-purple-400">{'\u{25CF}'}</span>
-              <strong className="text-white">90-minute time limit</strong>
+              <strong className="text-[#1A1A2E]">90-minute time limit</strong>
             </li>
             <li className="flex items-center gap-2">
               <span className="text-emerald-400">{'\u{25CF}'}</span>
@@ -200,7 +200,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
           }`}
         >
           <p className="text-5xl mb-3">{passed ? '\u{1F389}' : '\u{1F4AA}'}</p>
-          <h2 className="text-2xl font-bold text-white mb-3 text-shadow-sm">
+          <h2 className="text-2xl font-bold text-[#1A1A2E] mb-3 text-shadow-sm">
             {passed ? 'Congratulations!' : 'Keep Studying!'}
           </h2>
           <div
@@ -211,7 +211,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
             } as React.CSSProperties}
           >
             <div className="text-center">
-              <p className="text-3xl font-black text-white">{pct}%</p>
+              <p className="text-3xl font-black text-[#1A1A2E]">{pct}%</p>
               <p className="text-xs text-[#7A7A8A]">
                 {resultData.correct}/{examQuestions.length}
               </p>
@@ -223,7 +223,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
           </p>
         </div>
 
-        <h3 className="text-lg font-bold text-white mb-4">Score by Category</h3>
+        <h3 className="text-lg font-bold text-[#1A1A2E] mb-4">Score by Category</h3>
         <div className="space-y-3 mb-8">
           {ALL_CATEGORIES.map((cat) => {
             const { correct, total } = resultData.breakdown[cat];
@@ -245,13 +245,13 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
 
         {resultData.wrongQs.length > 0 && (
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-white mb-4">
+            <h3 className="text-lg font-bold text-[#1A1A2E] mb-4">
               Wrong Answers ({resultData.wrongQs.length})
             </h3>
             <div className="space-y-3">
               {resultData.wrongQs.map((q) => (
                 <div key={q.id} className="review-card">
-                  <p className="font-medium text-white mb-2">{q.question}</p>
+                  <p className="font-medium text-[#1A1A2E] mb-2">{q.question}</p>
                   {answers[q.id] !== undefined && (
                     <p className="text-sm text-rose-400 mb-1 flex items-center gap-1.5">
                       <span>&#x274C;</span>
@@ -288,7 +288,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
   return (
     <div className="max-w-3xl mx-auto animate-fade-up">
       {/* Header */}
-      <div className="sticky top-0 z-10 pb-3 pt-1" style={{ background: 'linear-gradient(to bottom, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.8) 80%, transparent 100%)' }}>
+      <div className="sticky top-0 z-10 pb-3 pt-4 mt-2" style={{ background: 'linear-gradient(to bottom, rgba(250,250,248,0.98) 0%, rgba(250,250,248,0.9) 80%, transparent 100%)' }}>
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-[#7A7A8A]">
             {answeredCount} of {examQuestions.length} answered
@@ -322,7 +322,7 @@ export default function ExamSimulator({ onComplete }: ExamSimulatorProps) {
           </button>
         </div>
 
-        <h3 className="text-lg font-bold text-white mb-6 text-shadow-sm leading-relaxed">
+        <h3 className="text-lg font-bold text-[#1A1A2E] mb-6 text-shadow-sm leading-relaxed">
           {q.question}
         </h3>
 

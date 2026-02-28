@@ -104,12 +104,12 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
   if (phase === 'setup') {
     return (
       <div className="max-w-xl mx-auto animate-fade-up">
-        <h2 className="text-2xl font-bold text-white mb-6 text-shadow-sm">
+        <h2 className="text-2xl font-bold text-[#1A1A2E] mb-6 text-shadow-sm">
           Quiz Setup
         </h2>
 
         <div className="glass-card-strong p-6 mb-6">
-          <label className="block font-semibold text-white mb-3">Categories</label>
+          <label className="block font-semibold text-[#1A1A2E] mb-3">Categories</label>
           <p className="text-sm text-[#7A7A8A] mb-3">
             Select categories or leave blank for all
           </p>
@@ -134,7 +134,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
         </div>
 
         <div className="glass-card-strong p-6 mb-6">
-          <label className="block font-semibold text-white mb-3">
+          <label className="block font-semibold text-[#1A1A2E] mb-3">
             Number of Questions
           </label>
           <select
@@ -168,7 +168,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
       <div className="max-w-2xl mx-auto animate-fade-up">
         <div className="glass-card-strong text-center p-8 mb-8">
           <p className="text-5xl mb-3">{passed ? '\u{1F389}' : '\u{1F4AA}'}</p>
-          <h2 className="text-2xl font-bold text-white mb-3 text-shadow-sm">
+          <h2 className="text-2xl font-bold text-[#1A1A2E] mb-3 text-shadow-sm">
             Quiz Complete!
           </h2>
           <div
@@ -179,7 +179,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
             } as React.CSSProperties}
           >
             <div className="text-center">
-              <p className="text-3xl font-black text-white">{pct}%</p>
+              <p className="text-3xl font-black text-[#1A1A2E]">{pct}%</p>
               <p className="text-xs text-[#7A7A8A]">
                 {correctCount}/{quizQuestions.length}
               </p>
@@ -189,13 +189,13 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
 
         {wrongQuestions.length > 0 && (
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-white mb-4">
+            <h3 className="text-lg font-bold text-[#1A1A2E] mb-4">
               Review Wrong Answers ({wrongQuestions.length})
             </h3>
             <div className="space-y-3">
               {wrongQuestions.map((q) => (
                 <div key={q.id} className="review-card animate-fade-up">
-                  <p className="font-medium text-white mb-2">{q.question}</p>
+                  <p className="font-medium text-[#1A1A2E] mb-2">{q.question}</p>
                   <p className="text-sm text-rose-400 mb-1 flex items-center gap-1.5">
                     <span>&#x274C;</span>
                     {q.options[answers[q.id]]}
@@ -237,7 +237,7 @@ export default function QuizMode({ onComplete }: QuizModeProps) {
         <p className="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">
           {q.taskCode} &middot; {q.category}
         </p>
-        <h3 className="text-lg font-bold text-white mb-6 text-shadow-sm leading-relaxed">
+        <h3 className="text-lg font-bold text-[#1A1A2E] mb-6 text-shadow-sm leading-relaxed">
           {q.question}
         </h3>
 
