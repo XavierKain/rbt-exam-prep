@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts RBTPromoV2 out/promo-v2.mp4",
+    "render": "remotion render src/index.ts RBTPromoV3 out/promo-v3.mp4",
     "render-v1": "remotion render src/index.ts RBTPromo out/promo-v1.mp4",
     "render-gif": "remotion render src/index.ts RBTPromo out/promo.gif --image-format png"
   },
