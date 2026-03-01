@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/rbt-exam-prep/app/sw.js', { scope: '/rbt-exam-prep/app/' })})}

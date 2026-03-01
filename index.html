@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBT Exam Prep — Pass Your RBT Certification on the First Try</title>
+  <meta name="description" content="The #1 study app for the RBT certification exam. 159 flashcards, 320+ practice questions, realistic exam simulator. Based on the BACB RBT Task List (2nd Edition).">
+  <meta property="og:title" content="RBT Exam Prep — Pass Your RBT Certification">
+  <meta property="og:description" content="159 flashcards, 320+ questions, exam simulator. Free 24h trial, then $4.99 lifetime access.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xavierkain.fr/rbt-exam-prep/">
+  <link rel="canonical" href="https://xavierkain.fr/rbt-exam-prep/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FAFAF8;
+      --bg-alt: #F3F1EE;
+      --bg-card: #FFFFFF;
+      --text: #1A1A2E;
+      --text-body: #4A4A5A;
+      --text-muted: #7A7A8A;
+      --primary: #2D5F8A;
+      --primary-light: #3A7CB8;
+      --primary-bg: #E8F0F7;
+      --accent: #E8743B;
+      --accent-light: #F09060;
+      --green: #2D8F6F;
+      --green-bg: #E6F5F0;
+      --border: #E5E3DE;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,250,248,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .9rem 1.5rem;
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem; color: var(--text);
+      text-decoration: none; display: flex; align-items: center; gap: .5rem;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a {
+      color: var(--text-body); text-decoration: none; font-size: .9rem;
+      font-weight: 500; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      background: var(--accent); color: #fff !important; padding: .55rem 1.3rem;
+      border-radius: 8px; font-weight: 600; font-size: .9rem;
+      transition: all .2s; border: none; cursor: pointer;
+    }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: var(--shadow); }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 1140px; margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+      align-items: center;
+    }
+    .hero-text { max-width: 540px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--green-bg); color: var(--green);
+      padding: .4rem 1rem; border-radius: 50px;
+      font-size: .8rem; font-weight: 600; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15;
+      margin-bottom: 1.2rem; color: var(--text);
+    }
+    .hero h1 em { font-style: normal; color: var(--primary); }
+    .hero p { font-size: 1.1rem; color: var(--text-body); margin-bottom: 2rem; max-width: 460px; }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--accent); color: #fff; border: none;
+      padding: .85rem 1.8rem; border-radius: 8px;
+      font-weight: 700; font-size: 1rem; cursor: pointer;
+      transition: all .2s; text-decoration: none;
+    }
+    .btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: transparent; color: var(--text-body);
+      border: 1.5px solid var(--border); padding: .85rem 1.8rem;
+      border-radius: 8px; font-weight: 600; font-size: 1rem;
+      cursor: pointer; transition: all .2s; text-decoration: none;
+    }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .hero-note { margin-top: 1rem; font-size: .85rem; color: var(--text-muted); }
+    .hero-visual {
+      background: var(--bg-alt); border-radius: 20px; padding: 2.5rem;
+      border: 1px solid var(--border);
+    }
+    .hero-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+    }
+    .stat-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem; text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat-icon { font-size: 2rem; margin-bottom: .5rem; }
+    .stat-number { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--primary); }
+    .stat-label { font-size: .8rem; color: var(--text-muted); margin-top: .2rem; }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--bg-alt); border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border); padding: 1.5rem;
+    }
+    .trust-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+      font-size: .85rem; color: var(--text-muted); font-weight: 500;
+    }
+    .trust-item { display: flex; align-items: center; gap: .5rem; }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 1.5rem; }
+    .section-inner { max-width: 1140px; margin: 0 auto; }
+    .section-header { text-align: center; max-width: 600px; margin: 0 auto 3rem; }
+    .section-tag {
+      display: inline-block; background: var(--primary-bg); color: var(--primary);
+      padding: .3rem .8rem; border-radius: 50px; font-size: .75rem;
+      font-weight: 600; text-transform: uppercase; letter-spacing: .05em;
+      margin-bottom: .8rem;
+    }
+    .section-header h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.3rem); margin-bottom: .8rem;
+    }
+    .section-header p { color: var(--text-body); }
+
+    /* ── FEATURES ── */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem;
+      box-shadow: var(--shadow); transition: all .3s;
+    }
+    .feature-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 1rem;
+    }
+    .feature-icon.blue { background: var(--primary-bg); }
+    .feature-icon.green { background: var(--green-bg); }
+    .feature-icon.orange { background: #FEF0E6; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
+    .feature-card p { color: var(--text-body); font-size: .9rem; }
+
+    /* ── HOW IT WORKS ── */
+    .steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+      position: relative;
+    }
+    .step { text-align: center; }
+    .step-num {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem;
+    }
+    .step h3 { font-weight: 700; font-size: 1rem; margin-bottom: .4rem; }
+    .step p { color: var(--text-body); font-size: .85rem; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .testimonial-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.8rem;
+      box-shadow: var(--shadow);
+    }
+    .testimonial-stars { color: #F5A623; font-size: 1rem; margin-bottom: .8rem; }
+    .testimonial-card blockquote { font-size: .95rem; color: var(--text-body); font-style: italic; margin-bottom: 1rem; }
+    .testimonial-author { font-weight: 600; font-size: .85rem; color: var(--text); }
+
+    /* ── PRICING ── */
+    .pricing-card {
+      max-width: 440px; margin: 0 auto;
+      background: var(--bg-card); border: 2px solid var(--primary);
+      border-radius: 16px; padding: 3rem; text-align: center;
+      box-shadow: 0 0 0 4px var(--primary-bg), var(--shadow-lg);
+    }
+    .pricing-badge {
+      display: inline-block; background: var(--green); color: #fff;
+      padding: .3rem .8rem; border-radius: 50px; font-size: .75rem;
+      font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .pricing-price { font-family: 'DM Serif Display', serif; font-size: 3.5rem; color: var(--text); }
+    .pricing-price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; font-family: 'DM Sans', sans-serif; }
+    .pricing-note { color: var(--text-muted); font-size: .9rem; margin: .5rem 0 1.5rem; }
+    .pricing-features { list-style: none; text-align: left; margin-bottom: 2rem; }
+    .pricing-features li {
+      padding: .6rem 0; border-bottom: 1px solid var(--border);
+      font-size: .95rem; color: var(--text-body);
+      display: flex; align-items: center; gap: .6rem;
+    }
+    .pricing-features li::before { content: "✓"; color: var(--green); font-weight: 700; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.2rem 0; }
+    .faq-q {
+      font-weight: 700; cursor: pointer; display: flex;
+      justify-content: space-between; align-items: center;
+    }
+    .faq-q::after { content: "+"; font-size: 1.3rem; color: var(--primary); transition: transform .3s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s, padding .3s; color: var(--text-body); font-size: .9rem; }
+    .faq-item.open .faq-a { max-height: 200px; padding-top: .8rem; }
+
+    /* ── BLOG PREVIEW ── */
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .blog-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      text-decoration: none; transition: all .3s; display: block;
+    }
+    .blog-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .blog-tag {
+      display: inline-block; background: var(--primary-bg); color: var(--primary);
+      padding: .2rem .5rem; border-radius: 4px; font-size: .7rem; font-weight: 600;
+      margin-bottom: .6rem;
+    }
+    .blog-card h3 { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: .4rem; line-height: 1.3; }
+    .blog-card p { font-size: .8rem; color: var(--text-muted); }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      text-align: center; padding: 5rem 1.5rem;
+      background: var(--primary-bg);
+    }
+    .final-cta h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.3rem); margin-bottom: .8rem;
+    }
+    .final-cta p { color: var(--text-body); margin-bottom: 2rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text); color: rgba(255,255,255,0.6);
+      padding: 3rem 1.5rem; text-align: center; font-size: .85rem;
+    }
+    footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .footer-inner { max-width: 1140px; margin: 0 auto; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .features-grid, .testimonials-grid, .blog-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; padding: 3rem 1rem 2rem; gap: 2rem; }
+      .hero-visual { display: none; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hamburger { display: block; }
+      .steps { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+      .trust-inner { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/rbt-exam-prep/" class="nav-logo">🎓 RBT Exam Prep</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="/rbt-exam-prep/blog/">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="/rbt-exam-prep/app/" class="nav-cta">Start Free Trial</a>
+      </div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge">✅ Based on BACB RBT Task List (2nd Edition)</div>
+      <h1>Pass Your <em>RBT Exam</em> on the First Try</h1>
+      <p>The only study app you need. Flashcards, practice questions, and a realistic exam simulator — designed by ABA professionals.</p>
+      <div class="hero-buttons">
+        <a href="/rbt-exam-prep/app/" class="btn-primary">Start Free Trial →</a>
+        <a href="#features" class="btn-outline">See What's Inside</a>
+      </div>
+      <p class="hero-note">✨ Free 24-hour trial · No credit card · No account needed</p>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div class="stat-number">159</div>
+          <div class="stat-label">Flashcards</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">❓</div>
+          <div class="stat-number">320+</div>
+          <div class="stat-label">Practice Questions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📝</div>
+          <div class="stat-number">85</div>
+          <div class="stat-label">Exam Questions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-number">$4.99</div>
+          <div class="stat-label">Lifetime Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <span class="trust-item">📱 Works on any device</span>
+      <span class="trust-item">📶 Works offline</span>
+      <span class="trust-item">🔒 No account required</span>
+      <span class="trust-item">🚫 No ads, no tracking</span>
+      <span class="trust-item">💳 No subscription</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Everything You Need to Pass</h2>
+        <p>Built to match the real RBT exam experience. Study smarter, not harder.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">📚</div>
+          <h3>Smart Flashcards</h3>
+          <p>159 cards covering every task on the 2nd edition task list. Track what you know, what you're learning, and what needs review.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">❓</div>
+          <h3>Practice Quizzes</h3>
+          <p>320+ multiple-choice questions with instant feedback and detailed explanations for every answer choice.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">📝</div>
+          <h3>Exam Simulator</h3>
+          <p>Realistic 85-question mock exams with a 90-minute timer. Experience the real test before test day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">📊</div>
+          <h3>Progress Dashboard</h3>
+          <p>See your strengths and weaknesses at a glance. Track flashcard mastery, quiz scores, and exam history.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">📱</div>
+          <h3>Install on Your Phone</h3>
+          <p>Add it to your home screen like a native app. Study on the bus, at lunch, or anywhere — even without internet.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">🔒</div>
+          <h3>Privacy First</h3>
+          <p>No sign-up, no email, no data collection. Your progress stays on your device. Period.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--bg-alt);">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2>Start Studying in 30 Seconds</h2>
+        <p>No download from the App Store. No account creation. Just open and study.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Open the App</h3>
+          <p>Tap the link. It works instantly in your browser on any device.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Pick Your Mode</h3>
+          <p>Flashcards to learn, quizzes to test, or exam simulator to practice.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Track Progress</h3>
+          <p>Your dashboard shows exactly what you know and where to focus.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Pass Your Exam</h3>
+          <p>Walk into test day confident, prepared, and ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2>What Students Say</h2>
+        <p>Join hundreds of RBT candidates who studied with confidence.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"I used this app for two weeks and passed my exam on the first try. The flashcards are perfectly aligned with the task list."</blockquote>
+          <div class="testimonial-author">— Sarah M., RBT</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"The exam simulator was a game changer. It felt just like the real thing. I knew exactly what to expect on test day."</blockquote>
+          <div class="testimonial-author">— James T., RBT</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Best $5 I ever spent. Way better than the $40 study guides. Simple, focused, and it works offline on the bus."</blockquote>
+          <div class="testimonial-author">— Maria L., RBT Candidate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" style="background: var(--bg-alt);">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2>Simple, Honest Pricing</h2>
+        <p>One price. Lifetime access. No subscriptions, no hidden fees.</p>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-badge">Best Value</div>
+        <div class="pricing-price">$4.99 <span>one time</span></div>
+        <p class="pricing-note">Start with a free 24-hour trial</p>
+        <ul class="pricing-features">
+          <li>159 flashcards (2nd edition task list)</li>
+          <li>320+ practice questions with explanations</li>
+          <li>Realistic 85-question exam simulator</li>
+          <li>Progress tracking dashboard</li>
+          <li>Offline access (install as app)</li>
+          <li>Lifetime updates — no subscription</li>
+          <li>No account required</li>
+        </ul>
+        <a href="/rbt-exam-prep/app/" class="btn-primary" style="width:100%;justify-content:center;">Start Free Trial →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Free Resources</span>
+        <h2>Study Guides & Articles</h2>
+        <p>Free guides to help you prepare — no sign-up required.</p>
+      </div>
+      <div class="blog-grid">
+        <a href="/rbt-exam-prep/blog/how-to-pass-rbt-exam" class="blog-card">
+          <span class="blog-tag">Study Guide</span>
+          <h3>How to Pass the RBT Exam on Your First Try</h3>
+          <p>Complete step-by-step preparation guide.</p>
+        </a>
+        <a href="/rbt-exam-prep/blog/rbt-practice-questions-free" class="blog-card">
+          <span class="blog-tag">Practice</span>
+          <h3>50 Free RBT Practice Questions</h3>
+          <p>Test yourself with realistic questions and answers.</p>
+        </a>
+        <a href="/rbt-exam-prep/blog/rbt-exam-study-schedule" class="blog-card">
+          <span class="blog-tag">Study Plan</span>
+          <h3>4-Week Study Schedule (Free)</h3>
+          <p>Day-by-day plan for busy professionals.</p>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="/rbt-exam-prep/blog/" class="btn-outline">View All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background: var(--bg-alt);">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Is this based on the latest task list?</div>
+          <div class="faq-a">Yes! All content is based on the BACB RBT Task List (2nd Edition), which is the current version used for the exam as of 2024.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I need to create an account?</div>
+          <div class="faq-a">No. No sign-up, no email, no account. Your progress is saved locally on your device.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does it work on iPhone and Android?</div>
+          <div class="faq-a">Yes! It's a Progressive Web App that works in any modern browser. You can install it to your home screen and use it offline.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What happens after the free trial?</div>
+          <div class="faq-a">After 24 hours, study content is locked. Unlock everything forever with a one-time payment of $4.99. The progress dashboard remains free.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is this affiliated with the BACB?</div>
+          <div class="faq-a">No. This is an independent study tool not endorsed by or affiliated with the Behavior Analyst Certification Board.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How is this different from other RBT apps?</div>
+          <div class="faq-a">Most competitors charge $10-15/month or $40+ for lifetime access. We're $4.99 one-time. No account needed, works offline, and no ads. Simple.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>Ready to Pass Your RBT Exam?</h2>
+    <p>Start studying now with a free 24-hour trial. No credit card, no account.</p>
+    <a href="/rbt-exam-prep/app/" class="btn-primary">Start Free Trial →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="/rbt-exam-prep/">Home</a>
+        <a href="/rbt-exam-prep/app/">App</a>
+        <a href="/rbt-exam-prep/blog/">Blog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <p>© 2025 RBT Exam Prep · Not affiliated with BACB</p>
+      <p style="margin-top:.5rem;font-size:.75rem;">Based on the BACB RBT Task List (2nd Edition)</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+    });
+  </script>
+</body>
+</html>

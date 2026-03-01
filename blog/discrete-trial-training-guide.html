@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discrete Trial Training (DTT): A Complete Guide for RBTs</title>
+  <meta name="description" content="Learn how to implement Discrete Trial Training (DTT) in ABA therapy. Step-by-step guide covering the components of a discrete trial, prompting, error correction, and data collection.">
+  <meta name="keywords" content="discrete trial training, DTT ABA, discrete trial teaching, ABA teaching method, DTT components, how to run discrete trials">
+  <meta property="og:title" content="Discrete Trial Training (DTT): A Complete Guide for RBTs">
+  <meta property="og:description" content="Master discrete trial training with this comprehensive guide — components, prompting, error correction, and real examples.">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://xavierkain.github.io/rbt-exam-prep/blog/discrete-trial-training-guide">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="blog.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Discrete Trial Training (DTT): A Complete Guide for RBTs",
+    "description": "Learn how to implement Discrete Trial Training (DTT) in ABA therapy.",
+    "datePublished": "2025-02-27",
+    "dateModified": "2025-02-27",
+    "author": {"@type": "Organization", "name": "RBT Exam Prep"},
+    "publisher": {"@type": "Organization", "name": "RBT Exam Prep"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is discrete trial training (DTT)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Discrete Trial Training (DTT) is a structured ABA teaching method that breaks skills into small, isolated components and teaches them through repeated practice with clear antecedents, responses, and consequences. Each trial has five components: discriminative stimulus (SD), prompt (if needed), response, consequence, and inter-trial interval."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the 5 components of a discrete trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The five components of a discrete trial are: (1) Discriminative Stimulus (SD) — the instruction or cue, (2) Prompt — assistance to help the learner respond correctly, (3) Response — the learner's answer or behavior, (4) Consequence — reinforcement for correct responses or error correction for incorrect ones, and (5) Inter-trial Interval (ITI) — a brief pause between trials."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between DTT and NET in ABA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DTT (Discrete Trial Training) is a structured, therapist-directed teaching method conducted in a controlled setting with massed trials. NET (Natural Environment Teaching) is a more naturalistic approach that follows the learner's motivation and takes place during everyday activities. Most ABA programs use both methods."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/rbt-exam-prep/" class="nav-logo">🎓 RBT Exam Prep</a>
+      <div class="nav-links">
+        <a href="/rbt-exam-prep/#features">Features</a>
+        <a href="/rbt-exam-prep/#pricing">Pricing</a>
+        <a href="/rbt-exam-prep/blog/">Blog</a>
+        <a href="/rbt-exam-prep/#faq">FAQ</a>
+        <a href="/rbt-exam-prep/app/" class="nav-cta">Start Free Trial</a>
+      </div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Discrete Trial Training (DTT): A Complete Guide for RBTs</h1>
+    <div class="article-meta">
+      <span>📅 February 2025</span>
+      <span>⏱ 13 min read</span>
+      <span>📘 ABA Techniques</span>
+    </div>
+
+    <p><strong>Discrete Trial Training (DTT)</strong> is one of the most widely used teaching strategies in applied behavior analysis (ABA). Originally developed as part of the Lovaas Method in the 1960s, DTT breaks complex skills into small, teachable units and uses structured repetition and reinforcement to build mastery.</p>
+
+    <p>As an <a href="rbt-certification-requirements">RBT</a>, you'll likely implement DTT daily. This guide covers everything you need to know.</p>
+
+    <div class="toc">
+      <h4>📋 Table of Contents</h4>
+      <ol>
+        <li><a href="#what">What Is DTT?</a></li>
+        <li><a href="#components">The 5 Components of a Discrete Trial</a></li>
+        <li><a href="#example">Step-by-Step Example</a></li>
+        <li><a href="#prompting">Prompting in DTT</a></li>
+        <li><a href="#error">Error Correction Procedures</a></li>
+        <li><a href="#data">Data Collection</a></li>
+        <li><a href="#mastery">Mastery Criteria</a></li>
+        <li><a href="#dtt-vs-net">DTT vs NET</a></li>
+        <li><a href="#tips">Tips for Effective DTT</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="what">What Is DTT?</h2>
+    <p>Discrete Trial Training is a <strong>structured teaching method</strong> that uses a series of individual learning opportunities (trials) to teach specific skills. Each trial is "discrete" — it has a clear beginning, middle, and end.</p>
+
+    <p>DTT is particularly effective for teaching:</p>
+    <ul>
+      <li>Receptive and expressive language (labeling, following instructions)</li>
+      <li>Academic skills (letters, numbers, colors, shapes)</li>
+      <li>Imitation skills</li>
+      <li>Play skills</li>
+      <li>Social skills (greetings, turn-taking)</li>
+      <li>Daily living skills</li>
+    </ul>
+
+    <h2 id="components">The 5 Components of a Discrete Trial</h2>
+
+    <table>
+      <thead>
+        <tr><th>#</th><th>Component</th><th>Description</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Discriminative Stimulus (S<sup>D</sup>)</strong></td><td>The instruction, cue, or question presented to the learner</td><td>"Touch the red card"</td></tr>
+        <tr><td>2</td><td><strong>Prompt</strong></td><td>Assistance provided to help the learner respond correctly (if needed)</td><td>Pointing to the red card</td></tr>
+        <tr><td>3</td><td><strong>Response</strong></td><td>The learner's behavior (correct, incorrect, or no response)</td><td>Child touches the red card</td></tr>
+        <tr><td>4</td><td><strong>Consequence</strong></td><td>Reinforcement for correct responses; error correction for incorrect</td><td>"Great job!" + token</td></tr>
+        <tr><td>5</td><td><strong>Inter-Trial Interval (ITI)</strong></td><td>A brief pause (1–5 seconds) between trials</td><td>RBT pauses, resets materials</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="example">Step-by-Step Example: Teaching Color Identification</h2>
+    <p>Here's how a DTT sequence might look when teaching a child to identify the color red:</p>
+
+    <h3>Trial 1 (Prompted)</h3>
+    <ol>
+      <li><strong>S<sup>D</sup>:</strong> RBT places a red card and a blue card on the table. "Touch red."</li>
+      <li><strong>Prompt:</strong> RBT points to the red card (gestural prompt)</li>
+      <li><strong>Response:</strong> Child touches the red card</li>
+      <li><strong>Consequence:</strong> "Awesome! That's red!" + provides a small treat</li>
+      <li><strong>ITI:</strong> RBT pauses for 3 seconds, rearranges cards</li>
+    </ol>
+
+    <h3>Trial 2 (Fading Prompt)</h3>
+    <ol>
+      <li><strong>S<sup>D</sup>:</strong> "Touch red."</li>
+      <li><strong>Prompt:</strong> RBT glances toward the red card (reduced prompt)</li>
+      <li><strong>Response:</strong> Child touches the red card</li>
+      <li><strong>Consequence:</strong> "Yes! Red!" + high five</li>
+      <li><strong>ITI:</strong> 3-second pause</li>
+    </ol>
+
+    <h3>Trial 3 (Independent)</h3>
+    <ol>
+      <li><strong>S<sup>D</sup>:</strong> "Touch red."</li>
+      <li><strong>Prompt:</strong> None</li>
+      <li><strong>Response:</strong> Child independently touches the red card</li>
+      <li><strong>Consequence:</strong> "Amazing job! You found red all by yourself!" + preferred item</li>
+      <li><strong>ITI:</strong> 3-second pause</li>
+    </ol>
+
+    <h2 id="prompting">Prompting in DTT</h2>
+    <p>Prompts are temporary assistance to help the learner respond correctly. The goal is always to <strong>fade prompts</strong> as quickly as possible so the learner responds independently.</p>
+
+    <h3>Prompt Hierarchy (Most to Least)</h3>
+    <ol>
+      <li><strong>Full physical:</strong> Hand-over-hand guidance</li>
+      <li><strong>Partial physical:</strong> Light touch or nudge</li>
+      <li><strong>Model:</strong> Demonstrating the correct response</li>
+      <li><strong>Verbal:</strong> Telling the answer or giving a hint</li>
+      <li><strong>Gestural:</strong> Pointing, nodding, or looking at the correct answer</li>
+      <li><strong>Positional:</strong> Placing the correct item closer to the learner</li>
+      <li><strong>Independent:</strong> No prompt (the goal)</li>
+    </ol>
+
+    <h3>Prompt Fading Strategies</h3>
+    <ul>
+      <li><strong>Most-to-Least (MTL):</strong> Start with the most intrusive prompt and gradually fade to less intrusive ones. Best for learners who need more support initially.</li>
+      <li><strong>Least-to-Most (LTM):</strong> Start with no prompt and increase assistance only if the learner doesn't respond correctly. Promotes more independent responding.</li>
+      <li><strong>Time Delay:</strong> Insert a time delay between the S<sup>D</sup> and the prompt, gradually increasing the delay to give the learner time to respond independently.</li>
+    </ul>
+
+    <h2 id="error">Error Correction Procedures</h2>
+    <p>When a learner responds incorrectly, RBTs use <strong>error correction</strong> to help them learn the correct response. A common procedure:</p>
+    <ol>
+      <li><strong>Provide feedback:</strong> Brief, neutral response (e.g., "Let's try again" or simply "No")</li>
+      <li><strong>Re-present the S<sup>D</sup>:</strong> Give the instruction again</li>
+      <li><strong>Prompt the correct response:</strong> Use whatever prompt level ensures a correct response</li>
+      <li><strong>Provide differential reinforcement:</strong> Reinforce the prompted correct response, but with less enthusiasm than an independent correct response</li>
+      <li><strong>Run a transfer trial:</strong> Present the S<sup>D</sup> again with a faded prompt to test for independent responding</li>
+    </ol>
+
+    <h2 id="data">Data Collection in DTT</h2>
+    <p>Data collection is essential in DTT. For each trial, RBTs typically record:</p>
+    <ul>
+      <li><strong>Correct (+) or Incorrect (−):</strong> Whether the response was correct</li>
+      <li><strong>Prompt level used:</strong> What type of prompt was needed (or independent)</li>
+      <li><strong>Date and session information</strong></li>
+    </ul>
+    <p>Common data formats include:</p>
+    <ul>
+      <li><strong>Trial-by-trial data:</strong> Record the outcome of every single trial</li>
+      <li><strong>First trial data:</strong> Record only the first response in each session (to measure true independent performance)</li>
+      <li><strong>Percentage correct:</strong> Number of correct trials ÷ total trials × 100</li>
+    </ul>
+
+    <h2 id="mastery">Mastery Criteria</h2>
+    <p>A skill is considered "mastered" when the learner meets predetermined criteria, such as:</p>
+    <ul>
+      <li><strong>80% or higher accuracy</strong> across 2–3 consecutive sessions</li>
+      <li><strong>Independent responding</strong> (no prompts needed)</li>
+      <li><strong>Across different people, settings, or materials</strong> (generalization)</li>
+    </ul>
+    <p>The specific mastery criteria are set by the supervising BCBA in the treatment plan.</p>
+
+    <h2 id="dtt-vs-net">DTT vs Natural Environment Teaching (NET)</h2>
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>DTT</th><th>NET</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Structure</strong></td><td>Highly structured</td><td>Naturalistic, follows child's lead</td></tr>
+        <tr><td><strong>Setting</strong></td><td>Typically at a table</td><td>Play area, home, community</td></tr>
+        <tr><td><strong>Motivation</strong></td><td>Contrived reinforcement</td><td>Natural reinforcement (related to the activity)</td></tr>
+        <tr><td><strong>Trials</strong></td><td>Massed (many trials in a row)</td><td>Interspersed throughout activities</td></tr>
+        <tr><td><strong>Best for</strong></td><td>New skill acquisition</td><td>Generalization and maintenance</td></tr>
+        <tr><td><strong>Pacing</strong></td><td>Therapist-directed</td><td>Child-initiated</td></tr>
+      </tbody>
+    </table>
+    <p>Most effective ABA programs use <strong>both DTT and NET</strong> — DTT for initial skill teaching, and NET for generalization and practice in natural contexts.</p>
+
+    <h2 id="tips">Tips for Effective DTT</h2>
+    <ol>
+      <li><strong>Keep it fun:</strong> Use enthusiastic praise, vary reinforcers, and incorporate the learner's interests</li>
+      <li><strong>Be consistent:</strong> Present the S<sup>D</sup> the same way each time until the skill is acquired</li>
+      <li><strong>Reinforce immediately:</strong> Deliver reinforcement within 1–2 seconds of the correct response</li>
+      <li><strong>Fade prompts systematically:</strong> Don't get stuck at a high prompt level — follow the prompt fading plan</li>
+      <li><strong>Mix mastered and new targets:</strong> Intersperse easy, mastered items with new learning targets to maintain motivation</li>
+      <li><strong>Take accurate data:</strong> Record data during or immediately after each trial — don't try to remember later</li>
+      <li><strong>Follow the BCBA's plan:</strong> Always implement DTT programs as written by the supervising BCBA</li>
+      <li><strong>Stay organized:</strong> Have all materials ready before starting a DTT session</li>
+    </ol>
+
+    <div class="cta-box">
+      <h3>📝 Practice DTT Questions</h3>
+      <p>Our free RBT exam prep app includes questions on discrete trial training and other ABA techniques.</p>
+      <a href="/rbt-exam-prep/app/" class="btn">Start Practicing Free →</a>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <h3>What is discrete trial training (DTT)?</h3>
+    <p><strong>Discrete Trial Training (DTT)</strong> is a structured ABA teaching method that breaks skills into small, isolated components and teaches them through repeated practice with clear antecedents, responses, and consequences. Each trial has five components: discriminative stimulus (S<sup>D</sup>), prompt (if needed), response, consequence, and inter-trial interval.</p>
+
+    <h3>What are the 5 components of a discrete trial?</h3>
+    <p>The five components are: (1) <strong>Discriminative Stimulus (S<sup>D</sup>)</strong> — the instruction, (2) <strong>Prompt</strong> — assistance if needed, (3) <strong>Response</strong> — the learner's answer, (4) <strong>Consequence</strong> — reinforcement or error correction, and (5) <strong>Inter-trial Interval (ITI)</strong> — a brief pause between trials.</p>
+
+    <h3>What is the difference between DTT and NET in ABA?</h3>
+    <p><strong>DTT</strong> is a structured, therapist-directed teaching method conducted in a controlled setting with massed trials. <strong>NET</strong> (Natural Environment Teaching) is a more naturalistic approach that follows the learner's motivation and takes place during everyday activities. Most ABA programs use both methods.</p>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="reinforcement-vs-punishment-aba">Reinforcement vs Punishment in ABA</a></li>
+      <li><a href="four-functions-of-behavior">The 4 Functions of Behavior in ABA</a></li>
+      <li><a href="what-is-aba-therapy">What Is ABA Therapy?</a></li>
+      <li><a href="aba-glossary">ABA Glossary: 100+ Terms</a></li>
+      <li><a href="rbt-task-list-2nd-edition">RBT Task List 2nd Edition</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="/rbt-exam-prep/">Home</a>
+        <a href="/rbt-exam-prep/app/">App</a>
+        <a href="/rbt-exam-prep/blog/">Blog</a>
+        <a href="/rbt-exam-prep/#pricing">Pricing</a>
+        <a href="/rbt-exam-prep/#faq">FAQ</a>
+      </div>
+      <p>© 2025 RBT Exam Prep · Not affiliated with BACB</p>
+      <p style="margin-top:.5rem;font-size:.75rem;">Based on the BACB RBT Task List (2nd Edition)</p>
+    </div>
+  </footer>
+</body>
+</html>

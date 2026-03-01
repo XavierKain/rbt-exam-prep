@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xavierkain.github.io/rbt-exam-prep/sitemap.xml
